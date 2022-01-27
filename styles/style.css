@@ -13,24 +13,30 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
-}
-.containar{
-    width: 870px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
 }
 hr{
-    border: 1px solid #D1D1D1;
+    width: 810px;
+    border: 1px solid #bdbbbb;
+    margin: auto;
 }
 
-/* top players style */
-.top-players{
+.top-players, .top-blogs, .lates-courses{
     margin: 40px;
 }
 .select-title{
     color: #562EFF;
     margin-bottom: 40px;
+}
+
+/* top players style */
+
+.player-blog-containar{
+    width: 870px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 30px 0 10px 0;
 }
 .players{
     display: grid;
@@ -50,4 +56,42 @@ hr{
     width: 150px;
     font-size: 18px;
     margin-left: 16px;
+}
+
+/* top blogs styles */
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 180px;
+    height: 120px;
+}
+.blog-info{
+    width: 200px;
+    height: 120px;
+    margin: 20px;
+}
+.blog-title{
+    margin-bottom: 20px;
+}
+.blog-author{
+    color: #9F9F9F;
+}
+.blog-author a{
+    columns: #562EFF;
+}
+
+/* lates course style */
+
+.lates-course-containar{
+    width: 870px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 10px 0;
 }
