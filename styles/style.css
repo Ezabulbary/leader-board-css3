@@ -66,6 +66,7 @@ hr{
     grid-gap: 25px;
 }
 .blog{
+    height: 120px;
     display: flex;
 }
 .blog .thumbnail img{
@@ -73,12 +74,12 @@ hr{
     height: 120px;
 }
 .blog-info{
-    width: 200px;
-    height: 120px;
-    margin: 20px;
+    width: 170px;
+    height: 110px;
+    margin: 15px 20px;
 }
 .blog-title{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .blog-author{
     color: #9F9F9F;
@@ -94,4 +95,50 @@ hr{
     background-color: #FFFFFF;
     border-radius: 5px;
     margin: 10px 0;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.course{
+    Width: 250px;
+    Height: 270px;
+}
+.course .banar img{
+    width: 250px;
+    height: 105px;
+    align-items: center;
+}
+.course-detail{
+    Width: 245px;
+    margin: 15px 0;
+}
+.course-title{
+    margin: 15px 0 10px 0;
+}
+.course-author{
+    text-decoration: none;
+    color: #ED6B4F;
+}
+.course-info{
+    display: flex;
+    margin: 20px 0 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.filled{
+    color: #FFC014;
+}
+.empty{
+    color: #AEAEAE;
+}
+.course-detail .course-info .coures-duration{
+    background-color: #fccad1;
+    border-radius: 15px;
+    padding: 6px 11px;
+}
+.course-detail .course-info .coures-duration .duretion-color{
+    color: #FF4A60
+;
 }
